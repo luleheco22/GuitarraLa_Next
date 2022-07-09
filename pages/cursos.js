@@ -16,7 +16,7 @@ const Cursos = ({cursos}) => {
            <div >
              {cursos.map(c=>(
                 
-               <div className={styles.container} key={c.id}>
+               <div className={styles.container} key={c._id}>
                    <h2 className='heading'>{c.descripcion}</h2>
                    <Image layout='responsive' width={400} height={150} src={c.imagen.url} alt={` ${c.descripcion} Imagen sobre cursos`}/>
                    <div className={styles.content}>
