@@ -4,6 +4,7 @@ import {useState,useEffect} from 'react'
 
 function MyApp({ Component, pageProps }) {
 const [carrito,setCarrito]=useState([])
+console.log(carrito,'acaaaa')
 
 useEffect(() => {
   const carritoLS= JSON.parse(localStorage.getItem('carrito')) ?? []

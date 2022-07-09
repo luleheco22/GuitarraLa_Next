@@ -6,7 +6,7 @@ import Layout from '../../components/Layout'
 
 const Producto = ({guitarra,agregarCarrito}) => {
   const [cantidad, setCantidad]=useState(1)
-  const {id,descripcion,imagen,nombre,precio}=guitarra[0]
+  const {_id,descripcion,imagen,nombre,precio}=guitarra[0]
  
 
   
@@ -18,7 +18,7 @@ const Producto = ({guitarra,agregarCarrito}) => {
       return
     }
     const guitarraSeleccionada={
-      id,
+      _id,
       imagen:imagen[0].url,
       nombre,
       precio,
